@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <h1 id="title">Ghostbuster Survey</h1><!--1st obj-->
+    <p id="description">Who was the best Ghostbuster?</p><!--2nd obj-->
+               <form id="survey-form"><!--3rd obj-->
+                  <div id="input-boxes">
+                    <br>    
+                    <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Enter your name" required><!--4th obj-->
+
+                        </input>
+                        <br>
+                      <label for="email">Email</label>       
+                        <input id="email" type="email" placeholder="Enter your email" required> <!--5th obj. Check 6th obj-->
+
+                                </input>
+                                <br>
+                      <label for="number">Age</label>
+                        <input id="number" type="number" min="13" max="99"
+                        placeholder="Age" required> <!--7th/9th obj. 
+                                    Check 8th obj-->
+                        </input>
+                </div>
+                <label for="dropdown-list">Select Ghostbuster</label>
+                <br>
+                 <div id="dropdown-list">           
+                            <select name="dropdown" id="dropdown"><!--12th obj-->
+                                <option value="default"></option>
+                                <option value="egon">Egon Spengler</option>
+                                <option value="ray">Ray Stantz</option>
+                                <option value="lewis">Lewis Tuttle</option>
+                                <option value="peter">Peter Venkman</option>
+                                <option value="winston">Winston Zeddemore</option>
+                            </select>
+                 </div>
+                            <br>
+                          
+                <div id="radio-list">        
+                            <input type="radio" id="value" name="bravery">
+                                <label for="bravery">Bravery<br></label>
+                            <input type="radio" id="value" name="intelligence">
+                                <label for="intelligence">Intelligence<br></label>
+                            <input type="radio" id="value" name="personality">
+                                <label for="personality">Personality<br></label>
+                            <input type="radio" id="value" name="passion">
+                                <label for="passion">Passion<br></label>
+                </div> 
+                <textarea id="textarea" cols="50" rows="5" placeholder="Additional reasons"></textarea><br>
+
+                <input id="button1" class ="button1" type="submit" placeholder="Submit Here">
+                </form>
+</body>
+</html>
